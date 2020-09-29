@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletor de cores RGB</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Desenvolvido por Caio César</p>
+      <h1>Seletor de cores RGB</h1>
+    </header>
+    <section class="container">
+      <div class="contentGroup">
+        <div class="inputGroup">
+          <span class="labelContent" id="redLabel">(R) Vermelho</span>
+          <input
+            class="range"
+            type="range"
+            value="0"
+            min="0"
+            max="255"
+            step="1"
+            id="redRange"
+          />
+          <span class="colorValue" id="redValue">0</span>
+        </div>
+        <div class="inputGroup">
+          <span class="labelContent" id="greenLabel">(G) Verde</span>
+          <input
+            class="range"
+            type="range"
+            value="0"
+            min="0"
+            max="255"
+            step="1"
+            id="greenRange"
+          />
+          <span class="colorValue" id="greenValue">0</span>
+        </div>
+        <div class="inputGroup">
+          <span class="labelContent" id="blueLabel">(B) Azul</span>
+          <input
+            class="range"
+            type="range"
+            value="0"
+            min="0"
+            max="255"
+            step="1"
+            id="blueRange"
+          />
+          <span class="colorValue" id="blueValue">0</span>
+        </div>
+      </div>
+      <div class="boxContent">
+        <div id="boxColor"></div>
+        <span class="textRGB" id="valueRGB">rgb(0,0,)</span>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Trabalho prático do Bootcamp Desenvolvimento FullStack do IGTI - 2020
+      </p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
