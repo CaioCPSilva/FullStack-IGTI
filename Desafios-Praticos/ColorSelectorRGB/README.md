@@ -2,14 +2,15 @@
 
 <p align="center">Repositório dos meus aprendizados no Bootcamp de Desenvolvedor FullStack da IGTI.</p>
 
-Este é o resultado de como ficou o meu Seletor de cores RGB:
+<h2 align="left">Sobre o desafio:</h1>
+
+<p align="left">Este é o primeiro projeto realizado por mim nos estudos do Bootcamp de Desenvolvimento Fullstack da IGTI.
+O principal conteúdo avaliado foi a manipulação de elementos do DOM com javascript.</p>
+<p align="left">Este é o resultado de como ficou o meu Seletor de cores RGB:</p>
 
 <h1 align="center">
 <img alt="SeletorDeCoresRGB" title="#SeletorDeCoresRGB" src="./Content/img1.png"/>
 </h1>
-
-Este é o primeiro projeto realizado por mim nos estudos do Bootcamp de Desenvolvimento Fullstack da IGTI.
-O principal conteúdo avaliado foi a manipulação de elementos do DOM com javascript.
 
 <h2 align="left">No módulo deste desafio aprendi os seguintes conceitos:</h2>
 
