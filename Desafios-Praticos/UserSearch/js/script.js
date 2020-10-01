@@ -40,7 +40,7 @@ async function fetchUsers() {
       picture: picture.thumbnail,
     };
   });
-  console.log(allUsers);
+  console.log(json);
 }
 
 function filterUserList() {
@@ -59,14 +59,12 @@ function filterUserList() {
 
   inputName.addEventListener('input', handleButton);
   inputName.addEventListener('keyup', handleInput);
+  button.addEventListener('click', filterUsers);
 
   function filterUsers() {
-    console.log('veio pra filter');
-
     filteredUsers = allUsers.filter((users) => {
       return users.name.toLowerCase().indexOf(nameToSearch) !== -1;
     });
-    console.log(filteredUsers);
     let countFilteredUsers = filteredUsers.length;
     let usersHTML = '<div>';
 
@@ -88,17 +86,16 @@ function filterUserList() {
     countMale = filteredUsers.filter((users) => {
       return users.gender === 'male';
     });
-    console.log(countMale);
+
     countFemale = filteredUsers.filter((users) => {
       return users.gender === 'female';
     });
-    console.log(countFemale);
+
     sumAges = filteredUsers.reduce((acc, curr) => {
       return acc + curr.birth;
     }, 0);
-    console.log(sumAges);
+
     averageAges = (sumAges / filteredUsers.length).toFixed(2);
-    console.log(averageAges);
 
     titleStatistics.innerHTML = 'Estatísticas';
     attributesList.innerHTML = `
