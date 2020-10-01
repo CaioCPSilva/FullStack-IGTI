@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Pesquisa de usuários</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-panel blue darken-2">
+        <h1 class="white-text">Pesquisa de usuários</h1>
+      </div>
+      <div class="container">
+        <div class="search-container">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="inputName" type="text" />
+            <label for="inputName">Nome</label>
+          </div>
+          <button
+            class="red lighten-2 waves-effect waves-light btn-small"
+            id="searchButton"
+            disabled="true"
+          >
+            Buscar
+          </button>
+        </div>
+        <div class="list-container">
+          <div class="users-box">
+            <h2 id="countUsers">Nenhum usuário filtrado</h2>
+            <div id="usersList" class="users-list"></div>
+          </div>
+          <div class="statistics">
+            <h2 id="titleStatistics">Nada a ser exibido</h2>
+            <blockquote>
+              <div id="attributesList"></div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <script src="./js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </main>
+  </body>
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Desenvolvimento Fullstack - IGTI</h5>
+          <p class="grey-text text-lighten-4">
+            Desafio de pesquisa de usuários desenvolvido por Caio César
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Redes sociais</h5>
+          <ul>
+            <li>
+              <a
+                class="grey-text text-lighten-3"
+                href="https://www.linkedin.com/in/caiocpsilva/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="grey-text text-lighten-3"
+                href="https://github.com/CaioCPSilva"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="grey-text text-lighten-3"
+                href="https://www.facebook.com/caiocesarps"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">© 2020 - Desenvolvido por Caio César</div>
+    </div>
+  </footer>
+</html>
