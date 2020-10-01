@@ -40,7 +40,6 @@ async function fetchUsers() {
       picture: picture.thumbnail,
     };
   });
-  console.log(json);
 }
 
 function filterUserList() {
