@@ -44,7 +44,7 @@ async function fetchUsers() {
 
 function filterUserList() {
   function handleInput(event) {
-    nameToSearch = event.target.value.toLowerCase();
+    nameToSearch = event.target.value.toLowerCase().trim().normalize('NFD');
     if (event.key === 'Enter' && event.target.value.trim() !== '')
       filterUsers();
   }
@@ -62,7 +62,9 @@ function filterUserList() {
 
   function filterUsers() {
     filteredUsers = allUsers.filter((users) => {
-      return users.name.toLowerCase().indexOf(nameToSearch) !== -1;
+      return (
+        users.name.toLowerCase().normalize('NFD').indexOf(nameToSearch) !== -1
+      );
     });
     let countFilteredUsers = filteredUsers.length;
     let usersHTML = '<div>';
