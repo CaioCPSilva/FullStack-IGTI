@@ -34,7 +34,6 @@ async function createStatesFiles() {
         return a.Nome.localeCompare(b.Nome);
       });
 
-    // prettier-ignore
     fs.writeFile(`./Arquivos/${state.Sigla}.json`,JSON.stringify(citiesFromState));
 
     const uf = state.Sigla;
