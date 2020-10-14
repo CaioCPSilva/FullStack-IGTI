@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap);
+
+body {
+  font-family: 'Baloo Tammudu 2';
+  font-style: normal;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  color: gold;
+  text-align: center;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  margin-bottom: 10rem;
+  align-items: center;
+  background-color: blueviolet;
+  box-sizing: border-box;
+}
+
+header p {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+  margin-top: 2rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 24px;
+  text-align: center;
+}
+
+/* Div's */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentGroup {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 7rem;
+  background-color: rgba(89, 0, 116, 0.95);
+  box-shadow: 0px 0px 40px 50px rgba(89, 0, 116, 0.95);
+  box-sizing: border-box;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.boxContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  height: 10.1rem;
+}
+#boxColor {
+  margin-top: 5rem;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.95);
+}
+#valueRGB {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Span's */
+.labelContent {
+  color: white;
+  width: 7rem;
+}
+.colorValue {
+  color: white;
+  padding-left: 20px;
+}
+
+/* Range's */
+.range {
+  -webkit-appearance: none;
+  position: relative;
+  width: 300px;
+  height: 5px;
+  outline: none;
+  margin-top: 0.8rem;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 1),
+    inset 0 1px 4px rgba(0, 0, 0, 0.9);
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.range::-moz-range-thumb {
+  width: 5px; /* Set a specific slider handle width */
+  height: 5px; /* Slider handle height */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+#redRange::-webkit-slider-thumb {
+  background: red;
+}
+#redRange::-moz-range-thumb {
+  background: red;
+}
+#greenRange::-webkit-slider-thumb {
+  background: lawngreen;
+}
+#greenRange::-moz-range-thumb {
+  background: lawngreen;
+}
+#blueRange::-webkit-slider-thumb {
+  background: cornflowerblue;
+}
+#blueRange::-moz-range-thumb {
+  background: cornflowerblue;
+}
+
+/* Labels */
+#redLabel {
+  color: red;
+  font-weight: bold;
+  font-size: large;
+}
+#greenLabel {
+  color: lawngreen;
+  font-weight: bold;
+  font-size: large;
+}
+#blueLabel {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Values */
+#redValue {
+  color: red;
+  font-weight: bold;
+  font-size: large;
+}
+#greenValue {
+  color: lawngreen;
+  font-weight: bold;
+  font-size: large;
+}
+#blueValue {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: large;
+}
