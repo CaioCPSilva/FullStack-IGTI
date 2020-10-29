@@ -42,7 +42,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <Header>Votação</Header>
+      <Header>Candidatos</Header>
       <Candidates
         previousPercentages={previousPercentages}
         previousVotes={previousVotes}

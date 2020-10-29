@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
 
+//Vetor isolado - Não usa componentes da função
 const BAND_MEMBERS = [
   {
     id: 1,
@@ -19,7 +20,8 @@ const BAND_MEMBERS = [
 ];
 
 export default function Band() {
-  const [bandMembers, setBandMembers] = useState(BAND_MEMBERS);
+  //Functional component
+  const [bandMembers, setBandMembers] = useState(BAND_MEMBERS); //BAND_MEMBERS - Valor inicial (vetor)
   const [bandName, setBandName] = useState('Rush');
 
   return (

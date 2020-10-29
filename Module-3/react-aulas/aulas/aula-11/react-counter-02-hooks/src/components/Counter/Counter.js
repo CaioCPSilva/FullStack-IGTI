@@ -7,7 +7,7 @@ import Value from './Value';
 import Steps from './Steps';
 
 export default function Counter() {
-  const [currentCounter, setCurrentCounter] = useState(2);
+  const [currentCounter, setCurrentCounter] = useState(0);
   const [steps, setSteps] = useState(0);
 
   const handleButtonClick = (clickType) => {

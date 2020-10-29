@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  padding: 5px;
+  margin: 5px;
+}
+.box .leftComponent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5px;
+  font-weight: bold;
+}
+.box .positiveValue {
+  display: flex;
+  flex-direction: column;
+  color: green;
+}
+
+.box .negativeValue {
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+.value {
+  font-weight: bold;
+}
+.positivePercentage {
+  color: blue;
+}
+.negativePercentage {
+  color: orange;
+}
