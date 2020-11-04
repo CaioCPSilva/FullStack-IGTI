@@ -30,9 +30,13 @@ app.patch('/student/:id', async (req, res) => {
   try {
     const id = req.params.id;
 
-    const student = studentModel.findByIdAndUpdate({ _id: id }, req.body, {
-      new: true,
-    });
+    const student = await studentModel.findByIdAndUpdate(
+      { _id: id },
+      req.body,
+      {
+        new: true,
+      }
+    );
     res.send(student);
   } catch (err) {
     res.status(500).send(err);
@@ -42,7 +46,9 @@ app.patch('/student/:id', async (req, res) => {
 //DELETE
 app.delete('/student/:id', async (req, res) => {
   try {
-    const student = studentModel.findByIdAndDelete({ _id: req.params.id });
+    const student = await studentModel.findByIdAndDelete({
+      _id: req.params.id,
+    });
     if (!student) {
       res.status(404).send('Documento não encontrado na collection');
     } else {
